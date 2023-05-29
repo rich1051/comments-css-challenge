@@ -3,6 +3,9 @@ body {
 }
 
 .comment {
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 20px;
     max-width: 45%;
     border-style: hidden;
     border-radius: 10px;
@@ -10,14 +13,12 @@ body {
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
     color: hsl(211, 10%, 45%);
-    margin:auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 5px;
-    padding-left: 85px;
 }
 
 #new-post {
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 20px;
     max-width: 45%;
     border-style: hidden;
     border-radius: 10px;
@@ -25,14 +26,14 @@ body {
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
     color: hsl(211, 10%, 45%);
-    margin:auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 5px;
-    padding-left: 85px;
 }
 
 .reply {
+    position: relative;
+    left: 70px;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 20px;
     max-width: 35%;
     max-height: fit-content;
     border-style: hidden;
@@ -41,14 +42,7 @@ body {
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
     color: hsl(211, 10%, 45%);
-    margin: auto;
-    position: relative;
-    left: 70px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 5px;
-    padding-left: 85px;
-}
+} 
 
 .vote-button {
     text-align: center;
@@ -57,9 +51,8 @@ body {
     max-width: 16px;
     background-color: hsl(223, 19%, 93%);
     padding: 10px;
-    position: relative;
-    top: 158px;
-    right: 65px;
+    display: flex;
+    flex-direction: column;
 }
 
 .user {
@@ -67,18 +60,12 @@ body {
     font-weight: 500;
     font-size: 16px;
     color: black;
-    position: relative;
-    bottom: 55px;
-    left: 60px;
 }
 
 .timestamp {
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
     color: hsl(211, 10%, 45%);
-    position: relative;
-    bottom: 90px;
-    left: 165px;
 }
 
 .vote-count {
@@ -97,7 +84,7 @@ body {
 
 .minus-button:hover {
     background-color: hsl(238, 40%, 52%);
-    padding: 45% 20% 45% 20%;
+    padding: 40% 20% 40% 20%;
 }
 
 .reply-button:hover {
@@ -111,28 +98,20 @@ body {
 }
 
 .avatar-img {
-    width: 50px;
-    height:50px;
+    width: 45px;
+    height:45px;
 }
 
-.comment-text {
+/* .comment-text {
     position: relative;
     bottom: 75px;
-}
+} */
 
-.reply-button {
+/* .reply-button {
     position: relative;
     left: 550px;
-    top: 50px;
     z-index: 2;
-}
-
-.reply-button2 {
-    position: relative;
-    left: 410px;
-    top: 50px;
-    z-index: 1;
-}
+} */
 
 .edit-button:hover {
     color: hsl(238, 40%, 52%);
@@ -143,7 +122,7 @@ body {
     color: hsl(358, 79%, 66%);
     font-weight: 500;
 }
-
+/* 
 .edit-button {
     position: relative;
     left: 410px;
@@ -156,7 +135,7 @@ body {
     left: 320px;
     top: 85px;
     z-index: 2;
-}
+} */
 
 #form-input {
     width: 75%;
@@ -164,8 +143,38 @@ body {
 
 }
 
-.new-post-img {
+/* .new-post-img {
     position: relative;
     right: 60px;
     top: 20px;
+} */
+.reply {
+    max-width: 35%;
+    max-height: fit-content;
+    border-style: hidden;
+    border-radius: 10px;
+    background-color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    color: hsl(211, 10%, 45%);
+}
+.first-row {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+
+}
+
+.big-row {
+    display: flex;
+    flex-direction: row;
+}
+
+#you {
+    background-color:hsl(238, 40%, 52%);
+    color: white;
+    padding: 8px;
+    font-weight: 500;
+    border-style: hidden;
+    border-radius: 10px;
 }
