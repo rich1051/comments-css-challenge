@@ -3,30 +3,51 @@ body {
 }
 
 .comment {
-    max-width: 65%;
-    max-height:min-content;
+    max-width: 45%;
     border-style: hidden;
     border-radius: 10px;
     background-color: white;
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
     color: hsl(211, 10%, 45%);
+    margin:auto;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 5px;
+    padding-left: 85px;
+}
+
+#new-post {
+    max-width: 45%;
+    border-style: hidden;
+    border-radius: 10px;
+    background-color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    color: hsl(211, 10%, 45%);
+    margin:auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    padding-left: 85px;
 }
 
 .reply {
-    max-width: 50%;
+    max-width: 35%;
+    max-height: fit-content;
     border-style: hidden;
     border-radius: 10px;
     background-color: white;
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
     color: hsl(211, 10%, 45%);
+    margin: auto;
+    position: relative;
+    left: 70px;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 5px;
+    padding-left: 85px;
 }
 
 .vote-button {
@@ -36,6 +57,9 @@ body {
     max-width: 16px;
     background-color: hsl(223, 19%, 93%);
     padding: 10px;
+    position: relative;
+    top: 158px;
+    right: 65px;
 }
 
 .user {
@@ -43,12 +67,18 @@ body {
     font-weight: 500;
     font-size: 16px;
     color: black;
+    position: relative;
+    bottom: 55px;
+    left: 60px;
 }
 
 .timestamp {
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
     color: hsl(211, 10%, 45%);
+    position: relative;
+    bottom: 90px;
+    left: 165px;
 }
 
 .vote-count {
@@ -58,4 +88,84 @@ body {
 .user-color {
     color: hsl(238, 40%, 52%);
     font-weight: 500;
+}
+
+.plus-button:hover {
+    background-color: hsl(238, 40%, 52%);
+    padding: 20%;
+}
+
+.minus-button:hover {
+    background-color: hsl(238, 40%, 52%);
+    padding: 45% 20% 45% 20%;
+}
+
+.reply-button:hover {
+    color:hsl(238, 40%, 52%);
+    font-weight: 500; 
+}
+
+.reply-button2:hover {
+    color:hsl(238, 40%, 52%);
+    font-weight: 500; 
+}
+
+.avatar-img {
+    width: 50px;
+    height:50px;
+}
+
+.comment-text {
+    position: relative;
+    bottom: 75px;
+}
+
+.reply-button {
+    position: relative;
+    left: 550px;
+    top: 50px;
+    z-index: 2;
+}
+
+.reply-button2 {
+    position: relative;
+    left: 410px;
+    top: 50px;
+    z-index: 1;
+}
+
+.edit-button:hover {
+    color: hsl(238, 40%, 52%);
+    font-weight: 500;
+}
+
+.delete-button:hover {
+    color: hsl(358, 79%, 66%);
+    font-weight: 500;
+}
+
+.edit-button {
+    position: relative;
+    left: 410px;
+    top: 50px;
+    z-index: 3;
+}
+
+.delete-button {
+    position: relative;
+    left: 320px;
+    top: 85px;
+    z-index: 2;
+}
+
+#form-input {
+    width: 75%;
+    height: 90%;
+
+}
+
+.new-post-img {
+    position: relative;
+    right: 60px;
+    top: 20px;
 }

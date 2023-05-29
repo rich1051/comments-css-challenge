@@ -29,9 +29,9 @@
       <img src="images/icon-minus.svg" alt="minus" class="minus-button">
     </div>
     <div class="controls">
-      <p class="reply"><img src="images/icon-reply.svg" alt="" class="control-icon">Reply</p>
+      <p class="reply-button"><img src="images/icon-reply.svg" alt="" class="control-icon">Reply</p>
     </div>
-    <img src="./images/avatars/image-amyrobson.png" alt="profile" />
+    <img src="./images/avatars/image-amyrobson.png" alt="profile" class="avatar-img"/>
     <p class="user">amyrobson</p>
     <p class="timestamp">1 month ago</p>
     <p class="comment-text">Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.</p>
@@ -44,9 +44,9 @@
       <img src="images/icon-minus.svg" alt="minus" class="minus-button">
     </div>
     <div class="controls">
-      <p class="reply"><img src="images/icon-reply.svg" alt="" class="control-icon">Reply</p>
+      <p class="reply-button"><img src="images/icon-reply.svg" alt="" class="control-icon">Reply</p>
     </div>
-    <img src="./images/avatars/image-maxblagun.png" alt="profile" />
+    <img src="./images/avatars/image-maxblagun.png" alt="profile" class="avatar-img"/>
     <p class="user">maxblagun</p>
     <p class="timestamp">2 weeks ago</p>
     <p class="comment-text">Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!</p>
@@ -59,9 +59,9 @@
       <img src="images/icon-minus.svg" alt="minus" class="minus-button">
     </div>
     <div class="controls">
-      <p class="reply"><img src="images/icon-reply.svg" alt="" class="control-icon">Reply</p>
+      <p class="reply-button2"><img src="images/icon-reply.svg" alt="" class="control-icon">Reply</p>
     </div>
-    <img src="./images/avatars/image-ramsesmiron.png" alt="profile" />
+    <img src="./images/avatars/image-ramsesmiron.png" alt="profile" class="avatar-img"/>
     <p class="user">ramsesmiron</p>
     <p class="timestamp">1 week ago</p>
     <p class="comment-text"><text class="user-color">@maxblagun</text> If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.</p>
@@ -74,15 +74,22 @@
       <img src="images/icon-minus.svg" alt="minus" class="minus-button">
     </div>
     <div class="controls">
-      <p class="delete"><img src="images/icon-delete.svg" alt="" class="control-icon">Delete</p>
-      <p class="edit"><img src="images/icon-edit.svg" alt="" class="control-icon">Edit</p>
+      <p class="delete-button"><img src="images/icon-delete.svg" alt="" class="control-icon">Delete</p>
+      <p class="edit-button"><img src="images/icon-edit.svg" alt="" class="control-icon">Edit</p>
     </div>
-    <img src="./images/avatars/image-juliusomo.png" alt="profile" />
+    <img src="./images/avatars/image-juliusomo.png" alt="profile" class="avatar-img"/>
     <p class="user">juliusomo</p>
     <p class="timestamp">2 days ago</p>
     <p class="comment-text"><text class="user-color">@ramsesmiron</text> I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.</p>
   </div>
 
+  <div id="new-post">
+    <img src="./images/avatars/image-juliusomo.png" alt="profile" class="new-post-img"/>
+    <form id="post-form">
+      <input id="form-input" type="text" placeholder="Add a comment...">
+      <button id="send-button">SEND</button>
+    </form>
+  </div>
   
   <div class="attribution">
     Challenge adapted from <a href="https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9" target="_blank">Frontend Mentor</a>. 
