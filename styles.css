@@ -13,6 +13,28 @@ body {
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
     color: hsl(211, 10%, 45%);
+    display: flex;
+    align-items: flex-start;
+}
+
+.rest-comment {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.comment-info-line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-info {
+    display: flex;
+}
+
+.post-info-item {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 #new-post {
@@ -29,19 +51,18 @@ body {
 }
 
 .reply {
-    position: relative;
-    left: 70px;
     margin: auto;
     margin-bottom: 10px;
     padding: 20px;
-    max-width: 35%;
-    max-height: fit-content;
+    max-width: 25%;
     border-style: hidden;
     border-radius: 10px;
     background-color: white;
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
     color: hsl(211, 10%, 45%);
+    display: flex;
+    align-items: flex-start;
 } 
 
 .vote-button {
@@ -100,6 +121,7 @@ body {
 .avatar-img {
     width: 45px;
     height:45px;
+    margin-left: 0px;
 }
 
 /* .comment-text {
@@ -158,17 +180,6 @@ body {
     font-size: 16px;
     color: hsl(211, 10%, 45%);
 }
-.first-row {
-    display: flex;
-    flex-direction: row;
-    align-content: space-around;
-
-}
-
-.big-row {
-    display: flex;
-    flex-direction: row;
-}
 
 #you {
     background-color:hsl(238, 40%, 52%);
@@ -176,5 +187,33 @@ body {
     padding: 8px;
     font-weight: 500;
     border-style: hidden;
+    border-radius: 10px;
+    position: relative;
+    top: -10px;
+}
+
+#new-post {
+    display: flex;
+    justify-content: space-between;
+}
+
+#send-button {
+    background-color:hsl(238, 40%, 52%);
+    color: white;
+    border-style: hidden;
+    border-radius: 10px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    height: 40px;
+}
+
+#send-button:hover {
+    background-color: green;
+}
+
+#form-input {
+    width: 100px;
+    height: 75px;
+    border-color: hsl(211, 10%, 45%);
     border-radius: 10px;
 }
